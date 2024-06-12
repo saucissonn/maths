@@ -1,0 +1,153 @@
+/* bande */
+
+.verticalStrip {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200px;
+  background-color: #AACAFF;
+  height:100%;
+}
+
+.horizontalStrip {
+    position: fixed; /* keep this to make the strip fixed at the top */
+    top: 0;
+    left: 0;
+    height: 200px;
+    background-color: #AACAFF;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* add this to vertically center the contents */
+}
+
+.align {
+	display: inline-block;
+	width: 300px;
+}
+
+/* position */
+
+.gauche {
+	padding-left: 20px;
+}
+
+.gauche2 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.largefont {
+	font-size: 25px;
+}
+
+
+.droite {
+    padding-right: 20px;
+}
+
+.haut {
+    top: 200px;
+    position: absolute;
+}
+
+.nomouse {
+	pointer-events: none;
+}
+
+/* deco lien */
+
+.no_deco {
+    color: #000000;
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font: 12px Arial;
+}
+
+/* menu */
+
+.menu {
+    height: 60px;
+    list-style: none;
+    padding: 10px;
+    margin: 40px;
+    display: flex;
+    position: relative; /* add this line */
+}
+
+
+.menu li {
+    margin-right: 20px; /* add some space between menu items */
+}
+
+.menu li a:link, .menu li a:visited {
+    display: block;
+    color: #FFF;
+    background: #293245;
+    padding: 6px 10px;
+    border-right: 1px solid #FFF;
+    text-align: left;
+    text-decoration: none;
+}
+
+.menu li a:hover {background-color: #199BD2;}
+.menu li a:active {background-color: #808080;}
+
+.sousmenu {
+    list-style-type: none;
+    display: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    z-index: 1; /* add this line */
+}
+
+.menu .sousmenu li {
+    float: none;
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid transparent;
+    border-right: 1px solid transparent;
+	font-size:20px;
+}
+
+
+.menu .sousmenu li a:hover {
+    background-color: #199BD2;
+}
+
+.menu li:hover .sousmenu {
+    display: block;
+}
+
+.logo {
+    font-size: 80px;
+    margin-right: 20px; /* add some space between the logo and menu */
+	color: #000000;
+    text-decoration: none;
+}
+
+
+.menu2 {
+    height: 10px;
+    list-style: none;
+    padding: 5px;
+}
+
+.menu2 a:link, .menu li a:visited {
+    display: block;
+    color: #FFF;
+    background: #293245;
+    padding: 6px 10px;
+    border-right: 1px solid #FFF;
+    text-align: left;
+    text-decoration: none;
+}
+
+.menu2 a:hover {background-color: #199BD2;}
+.menu2 a:active {background-color: #808080;}
